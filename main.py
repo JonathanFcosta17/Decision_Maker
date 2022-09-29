@@ -16,6 +16,7 @@ decision = DecisionMaker(options)
 print("""\nWould you like to add some weight to the options?
 Enter 'y' for yes and 'n' for no""")
 
+
 # Looping until the user enters a valid answer
 while True:
     answer = input("Enter your choice: ").lower()
