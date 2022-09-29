@@ -1,3 +1,4 @@
+
 <h1 align="center">Decision Maker</h1>
 
 <p align="center">Algorithm that chooses for you whatever you are undecided about</p>
