@@ -22,8 +22,8 @@ while True:
     # If the user doesn't want to add weights
     if answer == 'n':
         print("\nYou asked The Great Decision Maker what to do.")
-        print("The Great Decision Maker says: " +
-              decision.make_decision_simple())
+        print(
+            f"The Great Decision Maker says: {decision.make_decision_simple()}")
         break
 
     # If the user wants to add weights
@@ -31,8 +31,8 @@ while True:
         print(f"This is the list of options that you entered: {options}")
         weights = input("Enter the weights: ")
         print("\nYou asked The Great Decision Maker what to do.")
-        print("The Great Decision Maker says: " +
-              decision.make_decision_weighted(weights))
+        print(
+            f"The Great Decision Maker says: {decision.make_decision_weighted(weights)}")
         break
 
     else:
