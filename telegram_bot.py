@@ -131,7 +131,7 @@ def echo_all(message):
     imgs = os.listdir("Decision_Maker/img/memes")  # Getting the list of memes
     # Opening a random meme
     photo = open(f"Decision_Maker/img/memes/{random.choice(imgs)}", "rb")
-    bot.send_photo(message.chat.id, photo)  # Sending the meme
+    bot.send_photo(message.chat.id, photo)  # Sending the img to the user
 
 
 # Running the bot
