@@ -18,7 +18,7 @@
  ## Steps
  ### For this project to be considered completed, there are some steps to be followed:
 - [x] Create logic behind the bot.
-- [ ] Transform it to be usable in Discord.
+- [x] Transform it to be usable in Discord.
 - [ ] Transform it to be usable in Telegram's API.
 - [ ] Push it into Telegram's API.
 
