@@ -1,3 +1,5 @@
+# This is a simple decision maker that can be used in the terminal if you don't want to use the discord bot.
+
 from decision_class import DecisionMaker
 
 # Geting the list os options and choosing one
