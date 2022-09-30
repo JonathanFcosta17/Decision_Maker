@@ -50,6 +50,7 @@ class MyClient(discord.Client):
                     break
 
                 elif answer == 'y':
+
                     try:
                         # If the user wants to add weights
                         await message.channel.send(f"This is the list of options that you entered: {options.content}")
