@@ -3,9 +3,11 @@
 from decision_class import DecisionMaker
 
 # Geting the list os options and choosing one
-print("Welcome to the Decision Maker")
-print("Enter a list of options separated by commas")
-print("Example: 'Option 1, Option 2, Option 3'")
+
+print('''Welcome to the Decision Maker!
+Enter a list of options separated by commas:
+Example: 'Option 1, Option 2, Option 3'.''')
+
 options = input("Enter your options: ")
 
 # Create a decision maker object
