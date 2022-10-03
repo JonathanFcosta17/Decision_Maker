@@ -50,14 +50,24 @@ class MyClient(discord.Client):
                     break
 
                 elif answer == 'y':
-                    # If the user wants to add weights
-                    await message.channel.send(f"This is the list of options that you entered: {options.content}")
-                    await message.channel.send("Enter the weights separared by commas as well(Example: '1, 2, 3'):")
-                    # Waiting for the user to send the weights
-                    weights = await self.wait_for('message', check=check)
-                    # Sending the decision
-                    await message.channel.send(f"{name} asked The Great Decision Maker what to do.{os.linesep}The Great Decision Maker says: ***{decision.make_decision_weighted(weights.content)}***")
-                    break
+                    try:
+                        # If the user wants to add weights
+                        await message.channel.send(f"This is the list of options that you entered: {options.content}")
+                        await message.channel.send("Enter the weights separared by commas as well(Example: '1, 2, 3'):")
+                        # Waiting for the user to send the weights
+                        weights = await self.wait_for('message', check=check)
+                        # Sending the decision
+                        await message.channel.send(f"{name} asked The Great Decision Maker what to do.{os.linesep}The Great Decision Maker says: ***{decision.make_decision_weighted(weights.content)}***")
+                        break
+
+                    except Exception as e:
+                        await message.channel.send(f"Invalid input{os.linesep}{e}")
+                        await message.channel.send("Enter the weights separared by commas as well(Example: '1, 2, 3'):")
+                        # Waiting for the user to send the weights
+                        weights = await self.wait_for('message', check=check)
+                        # Sending the decision
+                        await message.channel.send(f"{name} asked The Great Decision Maker what to do.{os.linesep}The Great Decision Maker says: ***{decision.make_decision_weighted(weights.content)}***")
+                        break
 
                 else:
                     await message.channel.send("Invalid input")
@@ -67,11 +77,14 @@ class MyClient(discord.Client):
             await message.channel.send(f"Welcome to the Decision Maker!{os.linesep}This is a bot to help you with your indecision.{os.linesep}{os.linesep}Commands:{os.linesep}***!hello*** - Says hello to you{os.linesep}***!choice*** - Starts the bot{os.linesep}***!help*** - Shows this message")
 
 
-load_dotenv()  # Loading the .env file
-TOKEN = environ["DISCORD_TOKEN"]  # Getting the token from the .env file
+if __name__ == '__main__':
+    # Loading the token from the .env file
+    load_dotenv()
+    TOKEN = environ['DISCORD_TOKEN']
 
-intents = discord.Intents.default()
-intents.message_content = True
+    intents = discord.Intents.default()
+    intents.message_content = True
 
-client = MyClient(intents=intents)
-client.run(TOKEN)
+    # Creating the bot
+    client = MyClient(intents=intents)
+    client.run(TOKEN)
