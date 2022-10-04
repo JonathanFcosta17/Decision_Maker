@@ -205,8 +205,8 @@ The Great Decision Maker says: *{decision.make_decision_weighted(message.text)}*
 O Grande Decisor diz: *{decision.make_decision_weighted(message.text)}*"""
 
             bot.send_message(message.chat.id, text, parse_mode='Markdown')
-        except Exception as e:
-            text = f"Entrada inválida: {e}"
+        except Exception:
+            text = "Entrada inválida: O número de pesos não corresponde à quantidade de opções."
             bot.send_message(message.chat.id, text)
             bot.register_next_step_handler(message, with_weights)
 
