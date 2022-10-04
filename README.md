@@ -30,4 +30,4 @@
 - [x] Transform it to be usable in Discord.
 - [x] Push Discord bot to online server.
 - [x] Transform it to be usable in Telegram's API.
-- [ ] Push Telegram bot to online server.
+- [x] Push Telegram bot to online server.
