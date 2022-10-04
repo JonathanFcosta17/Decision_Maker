@@ -74,7 +74,8 @@ class MyClient(discord.Client):
 
         # Creating !help command
         if message.content.startswith('!help'):
-            await message.channel.send(f"Welcome to the Decision Maker!{os.linesep}This is a bot to help you with your indecision.{os.linesep}{os.linesep}Commands:{os.linesep}***!hello*** - Says hello to you{os.linesep}***!choice*** - Starts the bot{os.linesep}***!help*** - Shows this message")
+            await message.channel.send(f"""Hello!{os.linesep}I'm The Great Decision Maker, I was created by Jonathan Costa to help you make decisions.{os.linesep}{os.linesep}The commands are: {os.linesep}***!hello*** - Says hello to you{os.linesep}***!choice*** - Starts the bot{os.linesep}***!help*** - Shows this message{os.linesep}{os.linesep}The bot is open source and you can find it here:
+https://github.com/JonathanFcosta17/Decision_maker""")
 
 
 if __name__ == '__main__':
