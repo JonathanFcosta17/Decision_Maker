@@ -3,11 +3,10 @@ import random
 import os
 from decision_class import DecisionMaker
 from dotenv import load_dotenv
-from os import environ
 
 
 load_dotenv()  # Loading the .env file
-TOKEN = environ["TELEGRAM_TOKEN"]  # Getting the token from the .env file
+TOKEN = os.environ["TELEGRAM_TOKEN"]  # Getting the token from the .env file
 
 # Creating the bot
 bot = telebot.TeleBot(TOKEN)
