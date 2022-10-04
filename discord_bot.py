@@ -2,7 +2,6 @@ import discord
 import os
 from decision_class import DecisionMaker
 from dotenv import load_dotenv
-from os import environ
 
 # Creating the bot
 
@@ -81,7 +80,7 @@ class MyClient(discord.Client):
 if __name__ == '__main__':
     # Loading the token from the .env file
     load_dotenv()
-    TOKEN = environ['DISCORD_TOKEN']
+    TOKEN = os.environ['DISCORD_TOKEN']
 
     intents = discord.Intents.default()
     intents.message_content = True
