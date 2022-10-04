@@ -22,7 +22,9 @@
 
  ## Use it!
  
- You can add this bot to your server by clicking [here](https://discord.com/api/oauth2/authorize?client_id=1025106687734059039&permissions=2056&scope=bot)!
+ You can add this bot to your discord server by clicking [here](https://discord.com/api/oauth2/authorize?client_id=1025106687734059039&permissions=2056&scope=bot)!
+ 
+ And if you want to use it on Telegram, just click [here](t.me/TheGreatDecisionMakerBot)!
  
  ## Steps
  ### For this project to be considered completed, there are some steps to be followed:
