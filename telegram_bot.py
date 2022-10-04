@@ -275,10 +275,21 @@ https://github.com/JonathanFcosta17/Decision_maker
 
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
-    imgs = os.listdir("./img/memes")  # Getting the list of memes
-    # Opening a random meme
-    photo = open(f"./img/memes/{random.choice(imgs)}", "rb")
-    bot.send_photo(message.chat.id, photo)  # Sending the img to the user
+    if language == "portuguese":
+        # Getting the list of memes
+        imgs = os.listdir("./img/memes/pt")
+        # Opening a random meme
+        photo = open(
+            f"./img/memes/pt/{random.choice(imgs)}", "rb")
+        bot.send_photo(message.chat.id, photo)  # Sending the img to the user
+
+    else:
+        # Getting the list of memes
+        imgs = os.listdir("./img/memes/en")
+        # Opening a random meme
+        photo = open(
+            f"./img/memes/en/{random.choice(imgs)}", "rb")
+        bot.send_photo(message.chat.id, photo)  # Sending the img to the user
 
 
 # Running the bot
