@@ -275,9 +275,9 @@ https://github.com/JonathanFcosta17/Decision_maker
 
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
-    imgs = os.listdir("Decision_Maker/img/memes")  # Getting the list of memes
+    imgs = os.listdir("./img/memes")  # Getting the list of memes
     # Opening a random meme
-    photo = open(f"Decision_Maker/img/memes/{random.choice(imgs)}", "rb")
+    photo = open(f"./img/memes/{random.choice(imgs)}", "rb")
     bot.send_photo(message.chat.id, photo)  # Sending the img to the user
 
 
