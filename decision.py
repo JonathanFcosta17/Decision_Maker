@@ -1,4 +1,4 @@
-# This is a simple decision maker that can be used in the terminal if you don't want to use the discord bot.
+# This is a simple decision maker that can be used in the terminal if you don't want to use the bots.
 
 from decision_class import DecisionMaker
 
