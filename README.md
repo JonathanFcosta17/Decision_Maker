@@ -6,8 +6,8 @@
     <a href="#About">About</a> •
     <a href="#Getting-started">Getting Started</a> •
     <a href="#How-to-create-your-own-bot">How to create your own bot</a> •
-    <a href="#Use-the-bot!">Use the bot!</a> •
-    <a href="#Steps">Steps</a> 
+    <a href="#Use-the-bot">Use the bot</a> •
+    <a href="#Steps">Steps</a>
 
 </p>
 
@@ -35,7 +35,7 @@ To use the bot, you must first add it to your server, and then you can use the c
 
 ### Telegram bot:
 
-To use the bot, you must first search for it on Telegram, and then you can use the command '/help' to see all the commands, or you can use the command '/ajuda' to see all the commands in Portuguese.
+To use the bot, you must first search for it on Telegram, and then you press the button 'Start' to start using it. You can also use the command '/help' to see all the commands or the command '/ajuda' to see all the commands in Portuguese.
 
 ### Weights for the options:
 
@@ -75,7 +75,7 @@ pip install -r requirements.txt
 
 - And finally you use the file telegram_bot.py as a base to create your own bot.
 
- ## Use the bot!
+ ## Use the bot
  
  You can add this bot to your discord server by clicking [here](https://discord.com/api/oauth2/authorize?client_id=1025106687734059039&permissions=2056&scope=bot)!
  
