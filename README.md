@@ -55,7 +55,11 @@ The weights will be used correspondingly to the options you have written. For ex
 TOKEN=YOUR_TOKEN
 ```
 
-- Then you must install the dependencies with the command 'pip install -r requirements.txt'.
+- Then you must install the dependencies with the command:
+
+```
+pip install -r requirements.txt
+```
 
 - And finally you use the file discord_bot.py as a base to create your own bot.
 
